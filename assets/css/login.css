@@ -1,24 +1,25 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   background: url('/assets/images/login_bg.jpg') no-repeat center;
   background-size: cover;
+  /* 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+背景图像的某些部分也许无法显示在背景定位区域中。 */
 }
 
-.loginAndRegBox {
+.loginAndReadBox {
   width: 400px;
   height: 310px;
-  background-color: #fff;
+  background-color: palegoldenrod;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.title-box {
+.title-Box {
   height: 60px;
   background: url('/assets/images/login_title.png') no-repeat center;
 }
@@ -31,6 +32,9 @@ body {
   padding: 0 30px;
 }
 
+/* 让去注册 靠右对齐 
+	flex-end 项目位于容器的结尾*/
+
 .links {
   display: flex;
   justify-content: flex-end;
@@ -39,6 +43,8 @@ body {
 .links a {
   font-size: 12px;
 }
+
+/* 让图标和提示语显示在文本框内 */
 
 .layui-form-item {
   position: relative;
@@ -49,6 +55,8 @@ body {
   left: 10px;
   top: 10px;
 }
+
+/* 让提示语向右 */
 
 .layui-input {
   padding-left: 32px;
